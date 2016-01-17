@@ -14,7 +14,7 @@ $(function(){
 
   var multiStep = function(idx){
     var currentSpan = $('span').eq(idx);
-    var currentForm = $(currentSpan).find('form');
+    var currentForm = currentSpan.find('.field');
     currentSpan.removeClass('hidden');
     var i=0;
     currentForm.addClass('hidden');
